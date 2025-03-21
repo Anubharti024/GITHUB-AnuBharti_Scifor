@@ -1,0 +1,29 @@
+body {
+    margin: 20px;
+    width: 380px;
+}
+.heading {
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(11, 11, 52);
+    color: white;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+.list-group .bg-primary {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+}
+.list .listData {
+    text-align: start;
+    font-size: 17px;
+    color: darkblue;
+}
+.list .listData .options:hover {
+    background-color: rgb(223, 223, 223);
+}
+.options {
+    padding: 5px;
+}

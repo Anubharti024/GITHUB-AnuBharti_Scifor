@@ -1,0 +1,36 @@
+body {
+    margin: 20px;
+    width: 500px;
+}
+
+.heading {
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgb(40, 84, 40);
+    color: white;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.list-group .bg-success {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+    color: aliceblue;
+}
+
+.list .listData {
+    text-align: start;
+    font-size: 17px;
+    color:rgb(38, 45, 38);
+    list-style-type: disc;
+}
+
+.list .listData .options:hover {
+    background-color: rgb(230, 238, 230);
+}
+
+.options {
+    padding: 5px;
+}
