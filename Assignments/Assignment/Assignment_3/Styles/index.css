@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(blue, yellow, rgb(244, 87, 87), green, blue);
+}
+.container {
+    padding: 8px;
+    width: 70%;
+    background-color: rgb(246, 246, 253);
+    align-items: center;
+    border-radius: 10px;
+}
+.heading {
+    background-color: rgb(10, 91, 91);
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 100%;
+}
+.subcontainer {
+    background-color: rgb(228, 226, 226);
+    margin-top: 5px;
+    width: 100%;
+    padding: 8px;
+    width: calc(100%/3 - 16px);
+}
+.subcontainer .subheading {
+    font-size: 17px;
+    padding: 10px;
+}
+.subcontainer .inputbox {
+    margin: 8px;
+}
+.subcontainer .inputbox input {
+    width: 100%;
+    height: 30px;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.submitbox {
+    display: inline;
+    margin-left: 5px;
+}
+.submitbox .submit {
+    background-color: rgb(67, 127, 67);
+    width: 150px;
+    padding: 10px;
+    color: whitesmoke;
+    border: none;
+}
+.submitbox .reset {
+    background-color: rgb(253, 167, 7);
+    width: 150px;
+    padding: 10px;
+    color: whitesmoke;
+    border: none;
+    margin-top: 5px;
+}
+.container3 {
+    background-color: rgb(228, 226, 226);
+    width: 100%;
+    margin-top: 5px;
+    font-size: 17px;
+    padding: 1px;
+}
+.container3 .label {
+    display: inline-block;
+    width: 40%;
+    padding: 5px;
+}
