@@ -1,0 +1,13 @@
+.container {
+    width: 150px;
+    margin: 10px 15px;
+}
+
+.paging {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.Paging-link {
+    text-decoration: none;
+}
