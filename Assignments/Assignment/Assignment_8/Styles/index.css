@@ -1,0 +1,63 @@
+body {
+    margin: 0%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.container {
+    background: url(https://www.shutterstock.com/image-photo/modern-black-dark-blue-white-260nw-2200138025.jpg);
+    padding-bottom: 4px;
+    padding-top: 2px;
+}
+
+.header {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navContainer {
+    background-color: rgb(13, 69, 152);
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.liContainer li {
+    padding: 20px;
+    display: inline-block;
+}
+
+.liContainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.liContainer li:hover {
+    background-color: rgb(185, 55, 26);
+}
+
+.footer {
+    background-color: rgb(13, 69, 152);
+    color: white;
+    padding: 2px;
+    cursor: default;
+    text-align: center;
+}
+
+.Section {
+    background-color: rgb(239, 235, 235);
+    padding: 5px;
+    color: rgb(21, 21, 50);
+    cursor: default;
+}
+
+.SectionHeader {
+    padding: 5px;
+    margin-top: 0px;
+    color: white;
+    background-color: rgb(13, 69, 152);
+}
