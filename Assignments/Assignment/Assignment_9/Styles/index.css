@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(145, 144, 144)
+}
+
+.container {
+    background-color: rgb(216, 247, 236);
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+}
+
+h3 {
+    background-color: rgb(27, 91, 94);
+    padding: 4px;
+    color: white;
+    cursor: default;
+    text-align: center;
+}
+
+.btn:hover {
+    border-radius: 25px 25px;
+}
