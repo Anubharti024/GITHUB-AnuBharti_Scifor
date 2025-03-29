@@ -1,0 +1,64 @@
+/*SASS Variables :*/
+body {
+  margin: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.container {
+  background: url(https://wallpapercave.com/wp/EAkpA3k.jpg);
+  padding-bottom: 4px;
+  padding-top: 2px;
+}
+
+.header {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navContainer {
+  background-color: rgba(13, 89, 27, 0.993);
+  position: relative;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.liContainer li {
+  padding: 20px;
+  display: inline-block;
+}
+
+.liContainer a {
+  color: white;
+  text-decoration: none;
+}
+
+.liContainer li:hover {
+  background-color: rgb(159, 101, 2);
+}
+
+.footer {
+  background-color: rgba(13, 89, 27, 0.993);
+  color: white;
+  padding: 2px;
+  cursor: default;
+  text-align: center;
+}
+
+.Section {
+  background-color: rgb(242, 252, 242);
+  padding: 5px;
+  color: rgb(77, 50, 8);
+  cursor: default;
+}
+
+.SectionHeader {
+  padding: 5px;
+  margin-top: 0px;
+  color: white;
+  background-color: rgba(13, 89, 27, 0.993);
+}/*# sourceMappingURL=index.css.map */

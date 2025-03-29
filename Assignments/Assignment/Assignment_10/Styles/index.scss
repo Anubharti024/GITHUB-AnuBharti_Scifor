@@ -1,0 +1,89 @@
+/*SASS Variables :*/
+$color: white;
+$margin: 0px;
+$bg-color: rgba(13, 89, 27, 0.993);
+$body-pleft-pright: 8px;
+$container-pb: 4px;
+$container-pt: 2px;
+$navContainer-position: relative;
+$navContainer-list-Style: none;
+$navContainer-fs: 20px;
+$licontainer-p: 20px;
+$licontainer-text-decoration: none;
+$licontainer-display: inline-block;
+$licontainer-hover-bg: rgb(159, 101, 2);
+$header-mt: 10px;
+$header-fs: 30px;
+$header-display: flex;
+$header-align-justify: center;
+$footer-p: 2px;
+$footer-text-align: center;
+$cursor: default;
+$section-bg: rgb(242, 252, 242);
+$section-color: rgb(77, 50, 8);
+$section-p: 5px;
+
+
+body {
+    margin: $margin;
+    padding-left: $body-pleft-pright;
+    padding-right: $body-pleft-pright;
+}
+
+.container {
+    background: url(https://wallpapercave.com/wp/EAkpA3k.jpg);
+    padding-bottom: $container-pb;
+    padding-top: $container-pt;
+}
+
+.header {
+    font-size: $header-fs;
+    color: $color;
+    display: $header-display;
+    align-items: $header-align-justify;
+    justify-content: $header-align-justify;
+    margin-top: $header-mt;
+}
+
+.navContainer {
+    background-color: $bg-color;
+    position: $navContainer-position;
+    list-style-type: $navContainer-list-Style;
+    font-size: $navContainer-fs;
+}
+
+.liContainer li {
+    padding: $licontainer-p;
+    display: $licontainer-display;
+}
+
+.liContainer a {
+    color: $color;
+    text-decoration: $licontainer-text-decoration;
+}
+
+.liContainer li:hover {
+    background-color: $licontainer-hover-bg;
+}
+
+.footer {
+    background-color: $bg-color;
+    color: $color;
+    padding: $footer-p;
+    cursor: $cursor;
+    text-align: $footer-text-align;
+}
+
+.Section {
+    background-color: $section-bg;
+    padding: $section-p;
+    color: $section-color;
+    cursor: $cursor;
+}
+
+.SectionHeader {
+    padding: $section-p;
+    margin-top: $margin;
+    color: $color;
+    background-color: $bg-color;
+}
