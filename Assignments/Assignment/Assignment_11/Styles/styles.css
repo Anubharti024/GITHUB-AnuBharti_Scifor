@@ -1,0 +1,63 @@
+ /*  Pseudo Class  */
+ :root {
+     --primary-color: rgb(36, 67, 36);
+     --secondary-color: rgb(210, 207, 207);
+     --color: rgb(232, 228, 228);
+     --text-align-p: justify;
+     --heading-text: white;
+     --text-align: center;
+     --container-width: 100%;
+     --cotainer-fs: 20px;
+     --cotainer-p: 10px;
+     --diplay: flex;
+     --h2-p: 5px;
+     --h2-fs: 35px;
+     --h3-color: rgb(15, 74, 15);
+     --fletter: rgb(252, 7, 7);
+     --fletter-fw: bold;
+     --fletter-fs: 40px;
+     --fline: blue;
+     --fline-fs: 25px;
+ }
+
+ body {
+     display: var(--diplay);
+     align-items: var(--text-align);
+     justify-content: var(--text-align);
+     background-color: var(--color);
+ }
+
+ .container {
+     font-size: var(--cotainer-fs);
+     padding: var(--cotainer-p);
+     width: var(--container-width);
+     background-color: var(--secondary-color);
+ }
+
+ h2 {
+     text-align: var(--text-align);
+     font-size: var(--h2-fs);
+     padding: var(--h2-p);
+     color: var(--heading-text);
+     background-color: var(--primary-color)
+ }
+
+ h3 {
+     padding: var(--h2-p);
+     color: var(--h3-color);
+ }
+
+ .Firstletter::first-letter {
+     color: var(--fletter);
+     font-weight: var(--fletter-fw);
+     font-size: var(--fletter-fs);
+     text-align: var(--text-align-p);
+     padding: var(--h2-p);
+ }
+
+ .Firstline::first-line {
+     color: var(--fline);
+     font-size: var(--fline-fs);
+     text-align: var(--text-align-p);
+     padding: var(--h2-p);
+ }
