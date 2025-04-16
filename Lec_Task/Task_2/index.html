@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root {
+            --primary: rgb(6, 6, 99);
+            --secondary: rgb(214, 214, 183);
+            --third: black;
+            --font: 100px;
+            --padding: 20px;
+        }
+
+        #body {
+            background-color: var(--third);
+        }
+
+        #div {
+            background-color: var(--primary);
+            padding: var(--padding);
+        }
+
+        #head {
+            font: var(font);
+            color: var(--secondary);
+        }
+
+        #para {
+            color: var(--secondary);
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="div">
+        <h1 id="head">CSS Variable :</h1>
+        <p id="para">The var()function is used to insert the value of a CSS variable. CSS variables have access to the
+            DOM, which means that you can create variables with local or global scope, change the variables with
+            JavaScript, and change the variables based on media queries. </p>
+    </div>
+
+
+</body>
+
+</html>
