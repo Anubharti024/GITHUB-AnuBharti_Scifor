@@ -1,0 +1,30 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+thead {
+    background-color: rgb(219, 184, 252);
+    font-size: 1.2rem;
+}
+
+#mainHead {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: purple;
+}
+
+th,
+td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
