@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Online Book Store</title>
+
+    <!-- StyleSheet -->
+    <link rel="Stylesheet" href="../Css/styles.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- swipper cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!--0000000 Header-Section 000000-->
+    <header class="header">
+        <div class="navigation-container">
+            <a href="#" class="logo"><i class="fas fa-book"> Book_Store</i></a>
+
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search here ...">
+                <label for="" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="" class="fas fa-heart" id="favorites-container"></a>
+                <a href="" class="fas fa-shopping-cart" id="cart-container"></a>
+
+
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+        </div>
+        <div id="favorites-section" class="book-section hidden">
+
+
+            <!--0000000 Navigation Bar 000000 -->
+            <div class="nav-bar-Container">
+                <div class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#featured">Featured</a>
+                    <a href="#arrivals">Arrivals</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#blogs">Blogs</a>
+                </div>
+            </div>
+    </header>
+
+    <!--000000 Bottom navbar 000000-->
+    <div class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#blogs" class="fas fa-app-store"></a>
+    </div>
+
+
+
+    <!--000000 Login form 000000-->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>Sign in</h3>
+            <span>email</span>
+            <input type="email" class="box" placeholder="enter your email..">
+            <span>Password</span>
+            <input type="password" class="box" placeholder="enter your password..">
+
+
+            <div class="check-box">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+
+            <input type="submit" value="sign In" class="btn">
+            <p>Forgot Password ? <a href="">Click here..</a></p>
+            <p>don't have an account ? <a href="">Create me..</a></p>
+        </form>
+    </div>
+
+
+
+    <!--0000000 Main-Section 0000000-->
+    <main class="main">
+
+        <!--00000000 Home section  000000-->
+        <section class="home" id="home">
+            <div class="row">
+                <div class="content">
+                    <h3>upto 55% offers</h3>
+                    <p>"Every book is a new adventure waiting to be discovered."</p>
+                    <a href="https://globalforgivenessinitiative.com/blog/category/positive-thinking/" class="btn">Shop
+                        now</a>
+                </div>
+
+                <div class="swiper book-list">
+                    <div class="swiper-wrapper" id="book-swiper-wrapper">
+                    </div>
+
+                    <img class="stand" src="../Image/standd.jpg" alt="stand">
+                </div>
+            </div>
+        </section>
+
+
+        <!--00000000 Icons section  000000-->
+
+        <section class="icons-container">
+            <div class="icons">
+                <i class="fas fa-plane"></i>
+
+                <div class="content">
+                    <h3>over payment</h3>
+                    <p>over payment $100</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-lock"></i>
+
+                <div class="content">
+                    <h3>over payment</h3>
+                    <p>over payment $100</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+
+                <div class="content">
+                    <h3>over payment</h3>
+                    <p>over payment $100</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--00000000 Featured section  000000-->
+
+        <section class="featured" id="featured">
+            <div class="heading"><span>Featured Books</span></div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search books..." />
+            </div>
+
+            <div class="swiper featured-slider">
+                <div class="swiper-wrapper" id="book-container">
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--0000000 new letter section 0000000 -->
+        <section class="newletter">
+            <form action="">
+                <h3>Subscribe for latest update</h3>
+                <input type="email" placeholder="enter your email.." class="box">
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+        </section>
+
+
+        <!--0000000 Arrivals section 0000000 -->
+        <section>
+            <article class="arrivals" id="arrivals">
+                <div class="heading"><span>New Arrivals</span></div>
+
+                <!-- Slider 1 {Arrivals} -->
+                <div class="swiper arrivals-slider">
+                    <div class="swiper-wrapper" id="arrivals-container-1">
+                        <!-- Slides will be inserted here -->
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="arrivals" id="arrivals">
+
+                <!-- Slider 2 {Arrivals} -->
+                <div class="swiper arrivals-slider">
+                    <div class="swiper-wrapper" id="arrivals-container-2">
+                        <!-- Slides will be inserted here -->
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+
+
+        <!--00000000 Deal section  00000000-->
+
+        <section class="deal">
+            <div class="content">
+                <h3>deal of the day...</h3>
+                <h2>upto 50% offer...</h2>
+                <h1 id="deal-title">Loading deal...</h1>
+                <p id="deal-description">Please wait while we load a great book for you.</p>
+                <a href="#" target="_blank" class="btn" id="deal-link">Shop now</a>
+            </div>
+
+            <div class="image">
+                <img src="" alt="image" id="deal-image">
+            </div>
+        </section>
+
+
+        <!--00000000 Review section  00000000-->
+
+        <section class="reviews" id="reviews">
+            <h1 class="heading"><span>Client's Reviews</span></h1>
+
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper" id="review-container">
+                </div>
+            </div>
+        </section>
+
+
+        <!--00000000 blogs section  00000000-->
+
+        <section class="blogs" id="blogs">
+            <div class="heading"><span>Our Blogs</span></div>
+
+            <div class="swiper blog-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/blog1.avif" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>Memorable</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/blog2.avif" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>The Novel Nest</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/background2.jpeg" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>The Novel Nest</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/background1.jpg" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>Memorable</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/blog1.avif" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>The Bookworm's Burrow</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/blog2.avif" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>The Novel Nest</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide box">
+                        <div class="image">
+                            <img src="../Image/background2.jpeg" alt="image">
+                        </div>
+
+                        <div class="content">
+                            <h3>The Bookworm's Burrow</h3>
+                            <p>
+                                A bookstore is a retail establishment primarily selling books.
+                            </p>
+                            <a href="https://bloggers.feedspot.com/literary_blogs/" target="_blank" class="btn">read
+                                more..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 00000000 Footer-Section 0000000-->
+    <footer>
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Our location</h3>
+                    <a href=""><i class="fas fa-map-marker-alt"> </i> India</a>
+                    <a href=""><i class="fas fa-map-marker-alt"> </i> USA</a>
+                    <a href=""><i class="fas fa-map-marker-alt"></i> Russia</a>
+                    <a href=""><i class="fas fa-map-marker-alt"> </i> France</a>
+                    <a href=""><i class="fas fa-map-marker-alt"> </i> Canada</a>
+                    <a href=""><i class="fas fa-map-marker-alt"> </i> Africa</a>
+                </div>
+
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href=""><i class="fas fa-arrow-right"></i> Home</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> Featured</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> Arrivals</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> Blogs</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href=""><i class="fas fa-arrow-right"></i> accoount info</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> ordered items</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> privacy policy</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> payment method</a>
+                    <a href=""><i class="fas fa-arrow-right"></i> our services</a>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href=""><i class="fas fa-phone"></i> +123 4546 789</a>
+                    <a href=""><i class="fas fa-phone"></i> +456 4546 789</a>
+                    <a href=""><i class="fas fa-envelope"></i> anubharti21431@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="share">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="credit">created by <span>Anu Bharti</span> || all rights reserved.</div>
+        </section>
+    </footer>
+
+
+    <!-- Swiper cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Js/scripts.js"></script>
+
+</body>
+
+</html>
