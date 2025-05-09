@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voting Eligibility Checker</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
-      color: white;
-      background-color: #0967ba;
-    }
-    input, button {
-      padding: 10px;
-      font-size: 16px;
-    }
-    #result {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Eligibility Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+            background-color: #0967ba;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Voting Eligibility...</h1>
-  <input type="number" id="ageInput" placeholder="Enter your age" />
-  <button onclick="checkEligibility()">Check</button>
-  <div id="result"></div>
+    <h1>Voting Eligibility...</h1>
+    <input type="number" id="ageInput" placeholder="Enter your age" />
+    <button onclick="checkEligibility()">Check</button>
+    <div id="result"></div>
 
-  <script>
-    function checkEligibility() {
-      const age = parseInt(document.getElementById('ageInput').value);
-      const result = document.getElementById('result');
+    <script>
+        function checkEligibility() {
+            const age = parseInt(document.getElementById('ageInput').value);
+            const result = document.getElementById('result');
 
-      if (age < 18) {
-        result.textContent = "YOU ARE NOT ELIGIBLE TO VOTE....";
-      } else if (age >= 18) {
-        result.textContent = "YOU ARE ELIGIBLE TO VOTE....";
-      } else {
-        result.textContent = "Please enter a valid age....";
-      }
-    }
-  </script>
+            if (age < 18) {
+                result.textContent = "YOU ARE NOT ELIGIBLE TO VOTE....";
+            } else if (age >= 18) {
+                result.textContent = "YOU ARE ELIGIBLE TO VOTE....";
+            } else {
+                result.textContent = "Please enter a valid age....";
+            }
+        }
+    </script>
 </body>
+
 </html>
