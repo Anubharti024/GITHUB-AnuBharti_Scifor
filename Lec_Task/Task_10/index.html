@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Functional Component</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Simple functional component
+        function Greeting() {
+
+            return <div><h1>Hello, welcome to my page!</h1>
+                <h3>I am Functional Component...</h3></div>;
+        }
+
+        // Render the component
+        ReactDOM.createRoot(document.getElementById('root')).render(<Greeting />);
+    </script>
+</body>
+
+</html>
