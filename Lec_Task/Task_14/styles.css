@@ -1,0 +1,32 @@
+body {
+    background: #0d650d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(11, 6, 0);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid black;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
