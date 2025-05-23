@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Buttons </title>
+
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
+
+    <style>
+        body {
+            padding: 2rem;
+            background-color: lightskyblue;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 1rem black;
+            background-color: lightblue;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            color: #2b0666;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .button-row {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 2rem;
+        }
+
+        .button-label {
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .button {
+            border-radius: 20px;
+            box-shadow: 0 0 0.3rem black;
+            border: 2px solid black;
+        }
+
+        @media screen and (max-width: 640px) {
+            .button-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Foundation Button Types</h1>
+
+        <div class="button-container">
+            <div class="button-row">
+                <div class="button-label">Primary:</div>
+                <button class="button primary">Primary Button</button>
+            </div>
+
+            <div class="button-row">
+                <div class="button-label">Secondary:</div>
+                <button class="button secondary">Secondary Button</button>
+            </div>
+
+            <div class="button-row">
+                <div class="button-label">Success:</div>
+                <button class="button success">Success Button</button>
+            </div>
+
+            <div class="button-row">
+                <div class="button-label">Alert:</div>
+                <button class="button alert">Alert Button</button>
+            </div>
+
+            <div class="button-row">
+                <div class="button-label">Warning:</div>
+                <button class="button warning">Warning Button</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <p>The five different button types available in the Foundation framework:</p>
+            <ul>
+                <li><strong>Primary</strong>: Used for the main action</li>
+                <li><strong>Secondary</strong>: Used for secondary actions</li>
+                <li><strong>Success</strong>: Indicates a successful or positive action</li>
+                <li><strong>Alert</strong>: Indicates a dangerous or negative action</li>
+                <li><strong>Warning</strong>: Indicates an action that requires caution</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Foundation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).foundation();
+        });
+    </script>
+</body>
+
+</html>
