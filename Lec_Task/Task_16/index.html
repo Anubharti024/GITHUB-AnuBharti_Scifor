@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Info with useContext</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { createContext, useContext } = React;
+
+        //StudentContext:
+        const StudentContext = createContext();
+
+        // Provider Component
+        const StudentProvider = ({ children }) => {
+            const student = {
+                name: "Anu Bharti",
+                age: 22,
+                email: "anubharti@123.com",
+            };
+
+            return (
+                <StudentContext.Provider value={student}>
+                    {children}
+                </StudentContext.Provider>
+            );
+        };
+
+
+        const StudentDetails = () => {
+            const { name, age, email } = useContext(StudentContext);
+
+            return (
+                <div>
+                    <h2>Student Information :</h2>
+                    <p><strong>Name:</strong> {name}</p>
+                    <p><strong>Age:</strong> {age}</p>
+                    <p><strong>Email:</strong> {email}</p>
+                </div>
+            );
+        };
+
+        // Main App
+        const App = () => (
+            <StudentProvider>
+                <StudentDetails />
+            </StudentProvider>
+        );
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+    </script>
+</body>
+
+</html>
