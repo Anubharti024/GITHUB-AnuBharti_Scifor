@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React PUT Ex.</title>
+
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 50px;
+        background: #b5b9fc;
+      }
+      form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      button {
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        font-size: 16px;
+      }
+      .success {
+        color: rgb(11, 158, 43);
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function UpdateUser() {
+        const [username, setUsername] = React.useState("");
+        const [job, setJob] = React.useState("");
+        const [success, setSuccess] = React.useState(false);
+
+        const handleSubmit = (e) => {
+          e.preventDefault();
+
+          fetch("https://reqres.in/api/users/5", {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: username,
+              job: job,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Success:", data);
+              setSuccess(true);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              setSuccess(false);
+            });
+        };
+
+        return (
+          <div>
+            <form onSubmit={handleSubmit}>
+              <h2>Update User</h2>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Enter Job"
+                value={job}
+                onChange={(e) => setJob(e.target.value)}
+                required
+              />
+              <button type="submit">Update</button>
+            </form>
+            {success && (
+              <div className="success">
+                <h1>USER UPDATED SUCCESSFULLY !</h1>
+              </div>
+            )}
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<UpdateUser />);
+    </script>
+  </body>
+</html>
